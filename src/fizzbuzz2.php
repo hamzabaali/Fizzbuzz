@@ -88,7 +88,7 @@ class Fizzbuzz2
      *
      * @return string
      */
-    public function izFizzBuzz($number)
+    public function izFizzBuzz2($number)
     { $num=3;
         if (($number % 3 == 0) && ($number % 5 == 0)) {
             return "FizzBuzz";
@@ -105,7 +105,7 @@ class Fizzbuzz2
         return $number;
         return $num;
     }
-    public function izFizzBuzz($number)
+    public function izFizzBuzz3($number)
     {
         if (($number % 3 == 0) && ($number % 5 == 0)) {
             return "FizzBuzz";
