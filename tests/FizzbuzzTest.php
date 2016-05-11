@@ -36,19 +36,19 @@ class FizzbuzzTest extends PHPUnit_Framework_TestCase
     public function testCanFizz()
     {
         $a = new Fizzbuzz();
-        $this->assertEquals('Fizzz', $a->izFizzBuzz(3));
+        $this->assertEquals('Fizz', $a->izFizzBuzz(3));
     }
 
     public function testCanBuzz()
     {
         $a = new Fizzbuzz();
-        $this->assertEquals('Buzzz', $a->izFizzBuzz(5));
+        $this->assertEquals('Buzz', $a->izFizzBuzz(5));
     }
 
     public function testCanFizzBuzz()
     {
         $a = new Fizzbuzz();
-        $this->assertEquals('FizzBuzzz', $a->izFizzBuzz(15));
+        $this->assertEquals('FizzBuzz', $a->izFizzBuzz(15));
     }
 
     public function testReturnsArray()
