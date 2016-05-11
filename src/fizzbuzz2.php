@@ -25,7 +25,7 @@
  * @link     http://gitphp.com
  * @since    2014/05/03
  */
-class Fizzbuzz
+class Fizzbuzz2
 {
 
     private $start = 1;
