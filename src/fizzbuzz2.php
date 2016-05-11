@@ -41,7 +41,7 @@ class Fizzbuzz2
     public function __construct($start = 1, $end = 100)
     {
         $this->setStart($start);
-        this->setEnd($end);
+        $this->setEnd($end);
     }
 
     /**
