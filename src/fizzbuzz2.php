@@ -59,7 +59,7 @@ class Fizzbuzz2
      *
      * @param $start
      */
-    public function setStart($start)
+    private function setStart($start)
     {
         $this->start = $start;
     }
