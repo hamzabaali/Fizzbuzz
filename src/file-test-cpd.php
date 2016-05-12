@@ -44,6 +44,10 @@ class Fizzbuzz
      *
      * @param $end
      */
+     public function vide()
+    {
+        echo"une fonction vide ";
+    }
     public function setEnd($end)
     {
         $this->end = $end;
