@@ -163,7 +163,7 @@
   <exec executable="${phpmd}" taskname="phpmd">
    <arg path="${basedir}/src" />
    <arg value="xml" />
-   <arg path="${basedir}/build/phpmd_ruleset.xml" />
+   <arg path="${basedir}/build/logs/pmd.xml" />
    <arg value="--reportfile" />
    <arg path="${basedir}/build/logs/pmd.xml" />
   </exec>
