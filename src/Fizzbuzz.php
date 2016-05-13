@@ -100,17 +100,14 @@ private $q=15;
     }
 
 
-public function test($number)
-    {
 
-    // VIOLATION - Field
-    static function main( array $as ) { // VIOLATION - Formal
+    public static function main( array $as ) { // VIOLATION - Formal
         $number = 20 + $this->q; // VIOLATION - Local
         for (int $i = 0; $i < 10; $i++) { // Not a Violation (inside FOR)
             $number += $this->q;
         }
     }
-    }
+    
       
 
 }
