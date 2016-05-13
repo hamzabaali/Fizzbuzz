@@ -1,5 +1,6 @@
 <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+
 /**
  * Fizzbuzz.php
  *
@@ -12,6 +13,7 @@
  * @link     http://gitphp.com
  * @since    2014/05/03
  */
+
 /**
  * Class Fizzbuzz
  *
@@ -23,31 +25,24 @@
  * @link     http://gitphp.com
  * @since    2014/05/03
  */
-class Fizzbuzz
-{
-    private $start = 1;
-    private $end = 100;
-    protected $results = array();
+class Fizzbuzz{private $start = 1;private $end = 100;protected $results = array();
+
     /**
      * Class Construct
      *
      * @param int $start
      * @param int $end
      */
-    public function __construct($start = 1, $end = 100)
-    {
-        $this->setStart($start);
-        $this->setEnd($end);
-    }
+    public function __construct($start = 1, $end = 100){
+        $this->setStart($start);$this->setEnd($end);}
+
     /**
      * setEnd
      *
      * @param $end
      */
-    public function setEnd($end)
-    {
-        $this->end = $end;
-    }
+    public function setEnd($end) {        $this->end = $end;}
+
     /**
      * setStart
      *
@@ -57,6 +52,7 @@ class Fizzbuzz
     {
         $this->start = $start;
     }
+
     /**
      * Run the Fizzbuzz process
      *
@@ -65,12 +61,20 @@ class Fizzbuzz
     public function run()
     {
         $counter = $this->start;
+
         while ($counter <= $this->end) {
             $this->results[$counter] = $this->izFizzBuzz($counter);
             $counter ++;
         }
+
         return $this->results;
+
+        while ($counter <= $this->end) {
+            $this->results[$counter] = $this->izFizzBuzz($counter);
+            $counter ++;
+        }
     }
+
     /**
      * Check if a value is to be returned as fizz/buzz/fizzbuzz or itself.
      *
@@ -82,15 +86,30 @@ class Fizzbuzz
     {
         if (($number % 3 == 0) && ($number % 5 == 0)) {
             return "FizzBuzz";
-        }
-        elseif ($number % 3 == 0) {
+        } elseif($number % 3 == 0) {
             return "Fizz";
         }
+
         elseif ($number % 5 == 0) {
             return "Buzz";
         }
-        else {
-            return $number;
+        else{
+        return $number;
+        }
+    }
+
+
+
+
+      
+
+}
+class Something {
+    private $q = 15; // VIOLATION - Field
+    public static function main( array $as ) { // VIOLATION - Formal
+        $r = 20 + $this->q; // VIOLATION - Local
+        for (int $i = 0; $i < 10; $i++) { // Not a Violation (inside FOR)
+            $r += $this->q;
         }
     }
 }
