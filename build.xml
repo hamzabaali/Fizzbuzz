@@ -143,7 +143,7 @@
 
   <property name="pdepend.done" value="true"/>
  </target>
-<!--
+ <!-- a rendre apres
  <target name="phpmd"
          unless="phpmd.done"
          description="Perform project mess detection using PHPMD and print human readable output. Intended for usage on the command line before committing.">
@@ -169,8 +169,8 @@
   </exec>
 
   <property name="phpmd.done" value="true"/>
- </target>
--->
+ </target>-->
+ 
 <target name="phpmd" description="Perform project mess detection using PHPMD and print result in text format">
         <exec executable="${basedir}/build/tools/phpmd.phar" taskname="phpmd">
             <arg path="${basedir}/src"/>
