@@ -26,7 +26,8 @@
  * @since    2014/05/03
  */
 class Fizzbuzz{private $start = 1;private $end = 100;protected $results = array();
-
+private $q;
+$q = 15;
     /**
      * Class Construct
      *
@@ -99,7 +100,17 @@ class Fizzbuzz{private $start = 1;private $end = 100;protected $results = array(
     }
 
 
+public function test($number)
+    {
 
+    // VIOLATION - Field
+    public static function main( array $as ) { // VIOLATION - Formal
+        $number = 20 + $this->q; // VIOLATION - Local
+        for (int $i = 0; $i < 10; $i++) { // Not a Violation (inside FOR)
+            $number += $this->q;
+        }
+    }
+    }
       
 
 }
