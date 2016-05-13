@@ -26,8 +26,8 @@
  * @since    2014/05/03
  */
 class Fizzbuzz{private $start = 1;private $end = 100;protected $results = array();
-private $q;
-$q = 15;
+private $q=15;
+
     /**
      * Class Construct
      *
