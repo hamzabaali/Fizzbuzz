@@ -99,12 +99,9 @@ class Fizzbuzz{private $start = 1;private $end = 100;protected $results = array(
     }
 
 
+public function test()
+    {
 
-
-      
-
-}
-class Something {
     private $q = 15; // VIOLATION - Field
     public static function main( array $as ) { // VIOLATION - Formal
         $r = 20 + $this->q; // VIOLATION - Local
@@ -112,4 +109,8 @@ class Something {
             $r += $this->q;
         }
     }
+    }
+      
+
 }
+
